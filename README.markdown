@@ -1,9 +1,9 @@
 ## An introduction to compile Locate32 sources using SVN repository ##
 
 ### Changes:                                                      
- * 2007-12-31 Janne Huttunen \+++ initial version                    
- * 2008-10-02 Janne Huttunen \+++ Notification about VS2008 solutions
- * 2017-08-09 CLS \*** moved to markdown support    
+ * 2007-12-31 | Janne Huttunen | initial version                    
+ * 2008-10-02 | Janne Huttunen | Notification about VS2008 solutions
+ * 2017-08-09 | CLS | moved to markdown support    
 
 ### Table of Contents
 
@@ -19,11 +19,13 @@
 ###### 1. Preface
 ********************************************************************
 
+
 This file is intended to be a guide for downloading sources from SVN repository 
 and compiling them. Instructions given this guide is dedicated for MS Visual Studio 2008
 (Visual Studio 2005, see note below). This is due to the fact that I haven't tried other 
 compilers yet. If you have managed to compile the sources using some other compiler, 
 please contact the author (janne.huttunen@locate32.net) and share your experiences with us. 
+
 
 You can also contact the author if you have comments or problems, or if something 
 did went like described in this file. All comments are also very welcome. If you wish, 
@@ -38,6 +40,7 @@ repository (if you ave an account to the repository).
 ###### 2. Downloading sources
 ********************************************************************
 
+
 At first, you need download the sources from the Locate32's SVN 
 repository. To do this, you need a SVN client. If you haven't any SVN clients 
 installed, I suggest you to try TortoiseSVN (http://tortoisesvn.tigris.org/), 
@@ -50,6 +53,7 @@ in Windows Explorer and choose "SVN Checkout". When a dialog appears, you should
 correct URL (http://svn.locate32.net/locate32) and checkout directory (the target directory, 
 for example "C:\My documents\locate-sources") and press OK. Then Locate32's sources
 are downloaded to the chosen target directory. 
+
 
 The source directory can be updated to correspond the latest sources by right-clicking 
 the source directory in Windows Explorer and choosing "SVN Update". 
@@ -142,9 +146,12 @@ The latest lrestool.exe is also in the latest locate_lan-X.XXXXX.zip package in
 http://www.locate32.net/files/devel (these packages are dedicated for translators).  
 
 
+
+
 ********************************************************************
 ###### 5. Using Visual Studio 2005
 ********************************************************************
+
 
 The solution and project files were converted to Visual Studio 2008 on April 2008. 
 The change was done in subversion repository 196.  This means that 
@@ -153,33 +160,33 @@ However, these files do not contain changes made after this date, so you have to
 the solution and project files by yourself. The changes between 195 and the latest (210 
 so far) are listed below:
 
-** Changes in HFC Library solution:
+**Changes in HFC Library solution:**
 
 HFCLib32 and HFCCon32/Header files:
-- add HFCNetwork.h and HFCShell.h
+	- *added* HFCNetwork.h and HFCShell.h
 
 HFCLib32 and HFCCon32/Source files:
-- remove ShellExtension.cpp 
-- add Shell.cpp and Network.cpp
+	- *deleted* ShellExtension.cpp 
+	- *added* Shell.cpp and Network.cpp
 
-** Changes in Locate solution:
+**Changes in Locate solution:**
 
 common/Header files:
-- add win95srcfixes.h
+	- *added* win95srcfixes.h
 
 lan_en:
-- helptext.txt and helptext2.txt are not used anymore. 
+	- *deleted* helptext.txt and helptext2.txt are not used anymore. 
 
 locate32/Header files
-- Add strnatcmp.h from directory 3rdparty
+	- *added* strnatcmp.h from directory 3rdparty
 
 locate32/Source files
-- Add strnatcmp.cpp from directory 3rdparty
+	- *added* strnatcmp.cpp from directory 3rdparty
 
 locate32/HTML Help Topics:
-- There are so many changes that is not worthwhile to give a list, an easier way is to 
-remove all src files from project and then add all src files which are in Locate/hlp 
-directory. 
+	- There are so many changes that is not worthwhile to give a list, an easier way is to 
+	remove all src files from project and then add all src files which are in Locate/hlp 
+	directory. 
 
 
 
