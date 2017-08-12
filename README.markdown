@@ -16,7 +16,7 @@
 
 
 ********************************************************************
-###### 1. Preface
+#### 1. Preface
 ********************************************************************
 
 
@@ -37,7 +37,7 @@ repository (if you ave an account to the repository).
 
 
 ********************************************************************
-###### 2. Downloading sources
+#### 2. Downloading sources
 ********************************************************************
 
 
@@ -48,7 +48,7 @@ which is a very extensive and simple SVN client.
 
 
 The operation of downloading sources first time from the repository is called as "Checkout". 
-The checkout sources using TortoiseSVN, you just need to riht-click some directory
+The checkout sources using TortoiseSVN, you just need to right click some directory
 in Windows Explorer and choose "SVN Checkout". When a dialog appears, you should type 
 correct URL (http://svn.locate32.net/locate32) and checkout directory (the target directory, 
 for example "C:\My documents\locate-sources") and press OK. Then Locate32's sources
@@ -62,7 +62,7 @@ the source directory in Windows Explorer and choosing "SVN Update".
 
 
 ********************************************************************
-###### 3. Preliminary arrangements
+#### 3. Preliminary arrangements
 ********************************************************************
 
 
@@ -87,7 +87,7 @@ To do that, do the following steps:
 1. Create a directory for HFC library binaries. In this guide this directory is "C:\HFC", but
    you can also use other names. 
 
-2. Extract directories 3rdparty, bin, include, lib andlib64 from the source package to this 
+2. Extract directories 3rdparty, bin, include, lib and lib64 from the source package to this 
    directory. Note that these lib, lib64 and 3rdparty directories contain the required libraries 
    mentioned above.
    
@@ -123,7 +123,7 @@ To do that, do the following steps:
 
    
 ********************************************************************
-###### 4. Building sources
+#### 4. Building sources
 ********************************************************************
 
 
@@ -149,7 +149,7 @@ http://www.locate32.net/files/devel (these packages are dedicated for translator
 
 
 ********************************************************************
-###### 5. Using Visual Studio 2005
+#### 5. Using Visual Studio 2005
 ********************************************************************
 
 
@@ -191,7 +191,7 @@ locate32/HTML Help Topics:
 
 
 ********************************************************************
-###### 6. Other compilers
+#### 6. Other compilers
 ********************************************************************
 
 This section gives a brief introduction to compile sources using other compilers than
